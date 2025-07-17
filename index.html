@@ -1,80 +1,75 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Share My PDF and TeX Files</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravitational Acceleration Field (GAF) Theory</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 2em;
-            background: #f9f9f9;
+            margin: 40px;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
         }
 
         h1 {
-            color: #333;
+            text-align: center;
+            color: #2c3e50;
         }
 
-        .file-list {
-            margin-top: 1.5em;
+        p {
+            text-align: justify;
         }
 
-        .file-list li {
-            margin-bottom: 0.5em;
+        .links {
+            text-align: center;
+            margin-top: 30px;
         }
 
-        .upload-section {
-            margin-top: 2em;
-            padding: 1em;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px #eee;
+        a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
         }
 
-        label {
-            font-weight: bold;
-        }
-
-        input[type="file"] {
-            margin-top: 0.5em;
+        a:hover {
+            background-color: #2980b9;
         }
     </style>
 </head>
 
 <body>
-    <h1>Share My PDF and TeX Files</h1>
-    <div class="upload-section">
-        <form id="uploadForm">
-            <label for="fileInput">Upload PDF or TeX files:</label><br>
-            <input type="file" id="fileInput" accept=".pdf,.tex" multiple>
-            <button type="submit">Upload</button>
-        </form>
-    </div>
-    <ul class="file-list" id="fileList">
-        <!-- Uploaded files will appear here -->
-    </ul>
-    <script>
-        const uploadForm = document.getElementById('uploadForm');
-        const fileInput = document.getElementById('fileInput');
-        const fileList = document.getElementById('fileList');
+    <h1>Gravitational Acceleration Field (GAF) Theory</h1>
 
-        uploadForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-            fileList.innerHTML = '';
-            Array.from(fileInput.files).forEach(file => {
-                const li = document.createElement('li');
-                li.textContent = file.name;
-                // For demo: create a download link for local file (not persistent)
-                const url = URL.createObjectURL(file);
-                const a = document.createElement('a');
-                a.href = url;
-                a.download = file.name;
-                a.textContent = ' [Download]';
-                li.appendChild(a);
-                fileList.appendChild(li);
-            });
-        });
-    </script>
+    <p>Welcome to this page dedicated to sharing my work on the Gravitational Acceleration Field (GAF) Theory. My name
+        is Stephen James Luce, and as a semi-retired independent researcher, I have developed this theory as a novel
+        alternative to Einstein's General Relativity.</p>
+
+    <p>The purpose of this page is to make the theory accessible to anyone interested in exploring new perspectives on
+        gravity. GAF proposes gravity not as spacetime curvature, but as a mass-independent acceleration tensor field
+        that propagates at the speed of light. It incorporates retardation effects and nonlinear self-interactions to
+        align with empirical observations, such as Mercury's perihelion precession, gravitational lensing, and
+        gravitational waves, while offering a field-based framework in flat spacetime. This approach avoids
+        singularities and event horizons, potentially resolving some conceptual challenges in modern physics.</p>
+
+    <p>Below, you can download the full paper in PDF format or the source LaTeX file for further examination or
+        collaboration.</p>
+
+    <div class="links">
+        <a href="GAF.pdf">Download PDF (GAF.pdf)</a>
+        <a href="GAF.tex">Download LaTeX (GAF.tex)</a>
+    </div>
 </body>
 
 </html>
+```
