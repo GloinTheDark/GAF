@@ -41,28 +41,26 @@ This paper unveils GAF's field equation, derives predictions like Mercury's prec
 
 \section{The GAF Field Equation}
 
-GAF treats gravity as a symmetric tensor field \( h_{\mu\nu}(\vec{r}, t) \), sourced by the stress-energy tensor \( T_{\mu\nu} \), with propagation at light speed \( c \). The Lorentz-covariant governing equation is:
-\begin{equation}
-\square h_{\mu\nu} + \lambda (h^{\alpha\beta} h_{\alpha\beta}) h_{\mu\nu} = -\frac{16\pi G}{c^4} T_{\mu\nu},
-\end{equation}
-where \( \square = \partial_\rho \partial^\rho = \frac{1}{c^2} \partial_t^2 - \nabla^2 \) (in Minkowski metric \( \eta^{\mu\nu} = \operatorname{diag}(-1,1,1,1) \)), and \( \lambda \approx c^4 / G \) is a coupling constant for nonlinear self-interaction.
+Gravitational Acceleration Field (GAF) Theory treats gravity as a symmetric tensor field $ h_{\mu\nu}(\vec{r}, t) $, sourced by the stress-energy tensor $ T_{\mu\nu} $, with propagation at light speed $ c $. 
 
-The source \( T_{\mu\nu} \) is the stress-energy tensor, incorporating rest-mass density, momentum, and stresses, with relativistic corrections.
+The Lorentz-covariant governing equation is:
+$$\square h_{\mu\nu} + \lambda (h^{\alpha\beta} h_{\alpha\beta}) h_{\mu\nu} = -\frac{8\pi G}{c^4} T_{\mu\nu},$$
+where $ \square = \partial_\rho \partial^\rho = -\frac{1}{c^2} \partial_t^2 + \nabla^2 $ (in Minkowski metric $ \eta^{\mu\nu} = \operatorname{diag}(-1,1,1,1) $), and $\lambda \approx c^3 / (\hbar G)$ is a coupling constant for nonlinear self-interaction.  
 
-In the weak-field, low-velocity limit, this reduces to a form analogous to linearized GR, with retardation \( t_r = t - \frac{r}{c} \).
+The source $ T_{\mu\nu} $ is the stress-energy tensor, incorporating rest-mass density, momentum, and stresses, with relativistic corrections.
+
+In the weak-field, low-velocity limit, this reduces to a form analogous to linearized GR, with retardation $ t_r = t - \frac{r}{c} $.
 
 For a general mass distribution, the field is obtained by integrating over the source:
-\begin{equation}
-h_{\mu\nu}(\vec{r}) \approx -\frac{4G}{c^4} \int \frac{T_{\mu\nu}(\vec{r}', t_r)}{|\vec{r} - \vec{r}'|} \, d^3 \vec{r}' + \text{nonlinear and radiative terms}.
-\end{equation}
+$$h_{\mu\nu}(\vec{r}) \approx \frac{2G}{c^4} \int \frac{T_{\mu\nu}(\vec{r}', t_r)}{|\vec{r} - \vec{r}'|} \, d^3 \vec{r}' + \text{nonlinear and radiative terms}.$$
 
-For a static point mass \( M \), the dominant components approximate the Schwarzschild metric perturbations:
-\begin{equation}
-h_{00} \approx -\frac{2 G M}{c^2 r} \left( 1 + \frac{G M}{c^2 r} \right),
-\end{equation}
+For a static point mass $ M $, the dominant components approximate the Schwarzschild metric perturbations:
+$$h_{00} \approx \frac{2 G M}{c^2 r} \left( 1 + \frac{G M}{c^2 r} \right),$$
 where higher-order terms emerge from the nonlinear self-interaction.
 
-Radiative terms generate GW-like energy loss. For test particles, geodesics in the effective metric \( g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu} \) incorporate relativistic effects, with photons experiencing deflection via null geodesics.
+Radiative terms generate GW-like energy loss. 
+
+For test particles, geodesics in the effective metric $ g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu} $ incorporate relativistic effects, with photons experiencing deflection via null geodesics.
 
 \section{Comparison to General Relativity}
 
@@ -194,7 +192,7 @@ B. Bertotti, L. Iess, and P. Tortora, ``A test of general relativity using radio
 \appendix
 
 \section{The Coupling Constant \(\lambda\) in GAF Theory}
-
+NEEDS UPDATE
 This appendix explains the role of the coupling constant \(\lambda \approx c^4 / G\) in the nonlinear self-interaction term and provides estimates of its bounds based on observations.
 
 \subsection{Role of \(\lambda\)}
