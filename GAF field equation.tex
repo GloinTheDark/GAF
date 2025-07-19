@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{abstract}
+\usepackage{sectsty}
+\usepackage{geometry}
+\usepackage{url}
+\geometry{margin=1in}
+
+
+\begin{document}
+
+
+
+
+\section{The GAF Field Equation}
+
+Gravitational Acceleration Field (GAF) Theory treats gravity as a symmetric tensor field $ h_{\mu\nu}(\vec{r}, t) $, sourced by the stress-energy tensor $ T_{\mu\nu} $, with propagation at light speed $ c $. 
+
+\subsection{The Lorentz-covariant governing equation}
+$$\square h_{\mu\nu} + \lambda (h^{\alpha\beta} h_{\alpha\beta}) h_{\mu\nu} = -\frac{8\pi G}{c^4} T_{\mu\nu},$$
+where $ \square = \partial_\rho \partial^\rho = -\frac{1}{c^2} \partial_t^2 + \nabla^2 $ (in Minkowski metric $ \eta^{\mu\nu} = \operatorname{diag}(-1,1,1,1) $), and $\lambda \approx c^3 / (\hbar G)$ is a coupling constant for nonlinear self-interaction.  
+
+The source $ T_{\mu\nu} $ is the stress-energy tensor, incorporating rest-mass density, momentum, and stresses, with relativistic corrections.
+
+\subsection{Weak-field, Low-velocity limit}
+In the weak-field, low-velocity limit, this reduces to a form analogous to linearized GR, with retardation $ t_r = t - \frac{r}{c} $.
+
+For a general mass distribution, the field is obtained by integrating over the source:
+$$h_{\mu\nu}(\vec{r}) \approx \frac{2G}{c^4} \int \frac{T_{\mu\nu}(\vec{r}', t_r)}{|\vec{r} - \vec{r}'|} \, d^3 \vec{r}' + \text{nonlinear and radiative terms}.$$
+
+For a static point mass $ M $, the dominant components approximate the Schwarzschild metric perturbations:
+$$h_{00} \approx \frac{2 G M}{c^2 r} \left( 1 + \frac{G M}{c^2 r} \right),$$
+where higher-order terms emerge from the nonlinear self-interaction.
+
+Radiative terms generate GW-like energy loss. 
+
+For test particles, geodesics in the effective metric $ g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu} $ incorporate relativistic effects, with photons experiencing deflection via null geodesics.
+
+\end{document}
